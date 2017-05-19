@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RongCloud</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="lib/qiniu.js"></script>
+    <script src="lib/upload.js"></script>
+    <script src="lib/init.js"></script>
+    <script src="lib/require.js" data-main="main.js" defer async="async"></script>
+</head>
+<body>
+
+<div class="login">
+    <div class="login-box">
+        <p>AppKey：</p><input value="cpj2xarlc6yyn" name="appKey" class="app-key" type="text">
+        <p>token：</p><input name="token" class="token" type="text">
+        <p>sendId:</p><input name="token" class="send-id" type="text">
+        <input class="login-btn" type="submit" value="Login">
+    </div>
+</div>
+
+
+<div class="content">
+    <div class="left-bar">
+        <span class="user-id"></span>
+        <div class="blacklist-add-box" style="margin: 20px 0">
+            <input type="text" class="blacklist-add-input">
+            <input type="button" class="blacklist-add-btn" value="加入黑名单">
+        </div>
+        <div class="blacklist-remove-box" style="margin: 20px 0" >
+            <input type="text" class="blacklist-remove-input">
+            <input type="button" class="blacklist-remove-btn" value="移除黑名单">
+        </div>
+        <div class="blacklist-check-box" style="margin: 20px 0">
+            <input type="text" class="blacklist-check-input">
+            <input type="button" class="blacklist-check-btn" value="检查黑名单">
+        </div>
+        <input type="button" class="blacklist-show-btn" value="查看黑名单">
+
+
+        <input type="button" value="清除所有会话" id="clearAllConversation">
+        <div class="clear-conversation-box" style="margin: 20px 0">
+            <input type="text" class="clear-conversation-input" placeholder="填写清除类型">
+            <input type="button" id="clearSelectConversation" class="clear-conversation-btn" value="提交">
+        </div>
+
+        <p class="unread-total unread"></p>
+
+        <span class="add">+</span>
+        <ul class="add-box">
+            <li class="add-li show-create-discuss">讨论组</li>
+            <li class="add-li show-create-group">群组</li>
+            <li class="add-li show-create-chat">
+                <input type="text" id="addRoomInput"><input type="button" id="addRoom" value="加入聊天室">
+            </li>
+        </ul>
+        <div class="create-discuss">
+            <p>讨论组名称：</p><input type="text" class="discuss-name">
+            <p>讨论组成员：</p><input type="text" class="discuss-ids">
+            <input type="button" value="提交" class="submit-discuss">
+        </div>
+        <div class="create-group">
+
+        </div>
+        <div class="create-chat">
+
+        </div>
+    </div>
+    <div class="conversion-box">
+        <div class="conversion">
+            <p></p>
+        </div>
+    </div>
+    <div class="talk-box">
+        <div class="talk-title">
+        </div>
+        <span class="talk-add-discuss">+</span>
+        <span class="discuss-quit">退出</span><span class="chat-quit" id="chatQuit">退出</span>
+        <span class="discuss-kick">踢人</span>
+        <div class="discuss-name-box">
+            <input type="text" placeholder="填写讨论新名称" class="discuss-name" id="discussNameInput">
+            <input type="button" class="submit-discuss-name" value="提交">
+        </div>
+        <span class="talk-get-info">获取讨论组信息</span><span class="get-chat-info" id="chatDetail">获取聊天室信息</span>
+        <span id="talkName" class="talk-name"></span>
+        <div class="talk-add-id">
+            <p>请填写加入的ID：</p><input type="text" class="discuss-name-input">
+            <input type="button" value="提交" class="submit-talk-add">
+        </div>
+        <div class="talk-quit-id">
+            <p>踢出的ID：</p><input type="text" class="discuss-quit-input">
+            <input type="button" value="提交" class="submit-talk-quit">
+        </div>
+        <div class="chat-history-box">
+            <input type="text" placeholder="输入时间" id="chatTime">
+            <input type="button" value="提交" id="chatHistory">
+        </div>
+        <div class="talk-content">
+
+        </div>
+        <div class="tool-bar">
+            <input class="tool-emoji" type="button" value="表情">
+            <input class="tool-voice" type="file" value="声音">
+            <input class="tool-save-draft" type="button" value="保存草稿">
+            <input class="tool-show-draft" type="button" value="获取草稿">
+            <input class="tool-clear-draft" type="button" value="清空草稿">
+            <input class="send-picture" type="file" value="发送图片或文件">
+        </div>
+        <div class="talk-input">
+            <textarea placeholder="请输入......" class="input-text"></textarea><input type="button" class="input-btn" value="发送">
+        </div>
+        <div class="emoji-box">
+        </div>
+        <div class="draft-box">
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

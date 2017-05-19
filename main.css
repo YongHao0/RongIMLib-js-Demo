@@ -1,0 +1,374 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-width: 1100px;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+.content {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-btn {
+    display: block;
+}
+
+.add {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+}
+
+.add-box {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+.create-discuss {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 5px 0;
+    background-color: white;
+}
+
+.talk-add-id {
+    display: none;
+    background-color: rgb(0, 160, 255);
+    position: absolute;
+    top: 3px;
+    left: 39px;
+}
+
+.talk-quit-id {
+    display: none;
+    background-color: rgb(0, 160, 255);
+    position: absolute;
+    top: 3px;
+    left: 70px;
+}
+
+.chat-history-box {
+    display: none;
+    background-color: rgb(0, 160, 255);
+    position: absolute;
+    left: 70px;
+}
+
+div.talk-red {
+    background-color: red;
+}
+
+.create-group {
+    display: none;
+}
+
+.create-chat {
+    display: none;
+}
+
+.add-li {
+    padding: 0 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.add-li:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.blacklist-add-box {
+
+}
+
+.left-bar {
+    float: left;
+    width: 70px;
+    height: 100%;
+    background-color: rgb(0, 160, 255);
+}
+
+.conversion-box {
+    float: left;
+    width: 314px;
+    overflow: hidden;
+    height: 100%;
+    background-color: rgb(244, 248, 252);
+}
+
+.conversion {
+    width: 100%;
+    height: 95px;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e9f1;
+}
+
+.unread {
+    color: red;
+}
+
+.talk-box {
+    position: relative;
+    margin-left: 384px;
+    width: auto;
+    height: 100%;
+    background-color: rgb(249, 251, 253);
+}
+.talk-id {
+    margin: 0;
+    width: 100%;
+    min-height: 33px;
+}
+
+.talk-text {
+    overflow: hidden;
+    width: 100%;
+}
+
+.talk-title {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    background: white;
+}
+
+.talk-content {
+    overflow: scroll;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 54px;
+    bottom: 148px;
+}
+
+.tool-bar {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 118px;
+    background: white;
+}
+
+.talk-input {
+    width: 100%;
+    height: 118px;
+    position: absolute;
+    bottom: 0;
+    background: white;
+}
+
+.input-text {
+    float: left;
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.input-btn {
+    width: 10%;
+    cursor: pointer;
+    height: 100%;
+    padding: 0;
+    background-color: white;
+    border: 0;
+}
+
+.talk-show {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.talk-show-right {
+    margin-bottom: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.talk-id {
+    margin: 0;
+    width: 100%;
+    min-height: 33px;
+}
+
+.talk-text {
+    width: 100%;
+}
+
+.talk-add-discuss {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: none;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(0, 160, 255);
+    color: white;
+    font-size: 25px;
+}
+
+.discuss-quit {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: none;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(0, 160, 255);
+    color: white;
+    left: 38px;
+}
+
+.chat-quit {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: none;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(0, 160, 255);
+    color: white;
+}
+
+.discuss-kick {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: none;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(0, 160, 255);
+    color: white;
+    left: 78px;
+}
+.discuss-name-box {
+    position: absolute;
+    left: 117px;
+    display: none;
+}
+
+.talk-get-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 35px;
+    display: none;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(0, 160, 255);
+    color: white;
+    border-radius: 20px;
+}
+
+.get-chat-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 35px;
+    display: none;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgb(0, 160, 255);
+    color: white;
+    border-radius: 20px;
+}
+
+.talk-name {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.talk-voice {
+    background-color: rgb(0, 160, 255);
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    width: auto;
+    padding: 2px 10px;
+}
+
+.emoji-box {
+    display: none;
+    width: 420px;
+    position: absolute;
+    bottom: 158px;
+    left: 0;
+    background-color: white;
+}
+
+.draft-box {
+    width: 420px;
+    position: absolute;
+    bottom: 158px;
+    left: 100px;
+    background-color: white;
+}
+
+.emoji-box span {
+    margin: 2px;
+    cursor: pointer;
+}
+
+.tool-voice {
+    width: 63px;
+}
+
+.talk-image {
+    max-height: 100px;
+    max-width: 100px;
+}
