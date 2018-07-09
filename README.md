@@ -20,13 +20,13 @@
 
 ## 安装环境
 
-#### 安装 nodejs 5.3.0 版本, 建议安装 32 位版本
+1. 安装 nodejs 5.3.0 版本
 
 ​       Windows: [https://nodejs.org/dist/v5.3.0/node-v5.3.0-x86.msi](https://nodejs.org/dist/v5.3.0/node-v5.3.0-x86.msi) （打包32位的安装程序，兼容32/64位系统)
 
 ​       Mac: [https://nodejs.org/dist/v5.3.0/node-v5.3.0.pkg](https://nodejs.org/dist/v5.3.0/node-v5.3.0.pkg)
 
-#### 安装第三方依赖库
+2. 安装第三方依赖库
 
 ```
   npm install
@@ -34,22 +34,20 @@
 
 ## 运行方法
 
-#### 运行
-
 ```
   npm start
 ```
 
 ## 制作安装包
 
-#### 说明 
+1. 说明
 
 * Windows 下制作安装包前请修改安装包项目文件中的参数(desktop_setup.iss).项目文件中除了修改必要的参数（注释中有说明）,还需要修改 AppId(方法: 菜单中 Tools/Generate GUID)
   
 * mac 打包后文件(*.app)内如果有任何文件改动,需重新签名, 否则 .app 文件下载后会提示 “.app”已损坏，打不开. 您应该将它移到废纸篓
 
 
-#### 打包
+2. 打包
 
 * OS X
 
@@ -63,11 +61,11 @@ npm run package:mac
 npm run package:win
 ```
 
-#### Mac 下签名
+3. Mac 下签名
 
 * 签名说明: [https://github.com/nwjs/nw.js/wiki/MAS%3A-Requesting-certificates](https://github.com/nwjs/nw.js/wiki/MAS%3A-Requesting-certificates)
 
-#### 制作安装包:
+4. 制作安装包:
 
 * OS X
 
